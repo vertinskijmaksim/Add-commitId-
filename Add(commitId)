@@ -1,0 +1,6 @@
+  public void Commit(string message)
+    {
+        string commitId = $"{currentBranch}_commit_{branches[currentBranch].Count + 1}";
+        branches[currentBranch].Add(commitId);
+        Console.WriteLine($"Committed: {commitId} - {message}");
+    }
